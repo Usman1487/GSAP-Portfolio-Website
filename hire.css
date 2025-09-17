@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d1117;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #161b22;
+  padding: 1rem 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 { color: #00eaff; }
+.header nav a {
+  margin-left: 1.5rem;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.header nav a.active,
+.header nav a:hover { color: #00eaff; }
+
+/* Services */
+.services {
+  padding: 4rem 8vw;
+  text-align: center;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.service-card {
+  background: #161b22;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.service-card h3 { color: #00eaff; }
+.price { margin: 1rem 0; font-weight: bold; }
+
+/* Pricing */
+.pricing {
+  padding: 4rem 8vw;
+  background: #161b22;
+  text-align: center;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.pricing-card {
+  background: #0d1117;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.pricing-card.featured {
+  border: 2px solid #00eaff;
+}
+.pricing-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  background: #00eaff;
+  color: #0d1117;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+.btn:hover {
+  background: #008bb5;
+  color: #fff;
+}
+
+/* Social */
+.social {
+  padding: 3rem 8vw;
+  text-align: center;
+}
+.social a { margin: 0 1rem; }
+
+/* Footer */
+.footer {
+  background: #161b22;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #777;
+}
